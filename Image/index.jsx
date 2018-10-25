@@ -2,7 +2,7 @@
  * @Author: TB 
  * @Date: 2018-10-25 12:13:12 
  * @Last Modified by: TB
- * @Last Modified time: 2018-10-25 12:17:49
+ * @Last Modified time: 2018-10-25 12:31:10
  * 自适应图片组件 可指定图片比例
  */
 
@@ -15,8 +15,9 @@ import './index.less'
 
 export default class Image extends React.Component {
 	static propTypes = {
-		src: PropTypes.string,
-		ratio: PropTypes.number
+		src: PropTypes.string, // 图片地址
+		ratio: PropTypes.number, //　图片比例
+		className: PropsTypes.string
 	}
 
 	static defaultProps = {

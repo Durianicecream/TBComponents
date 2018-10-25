@@ -2,7 +2,7 @@
  * @Author: TB 
  * @Date: 2018-10-25 12:20:24 
  * @Last Modified by: TB
- * @Last Modified time: 2018-10-25 12:21:13
+ * @Last Modified time: 2018-10-25 12:31:44
  * 手机验证码输入组件
  */
 
@@ -14,9 +14,9 @@ import './index.less'
 
 export default class PinCode extends React.Component {
 	static propTypes = {
-		onFinish: PropTypes.func,
+		onFinish: PropTypes.func,　// 输入完成回调
 		className: PropTypes.string,
-		length: PropTypes.number
+		length: PropTypes.number　//　验证码长度
 	}
 
 	static defaultProps = {

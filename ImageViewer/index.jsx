@@ -2,7 +2,7 @@
  * @Author: TB 
  * @Date: 2018-10-25 12:22:05 
  * @Last Modified by: TB
- * @Last Modified time: 2018-10-25 12:23:13
+ * @Last Modified time: 2018-10-25 12:29:55
  * 基于photoswipe 的图片查看器(仿微信)
  */
 
@@ -16,15 +16,13 @@ import 'photoswipe/dist/default-skin/default-skin.css'
 
 export default class ImageViewer extends React.Component {
 	static propTypes = {
-		images: PropTypes.arrayOf(PropTypes.string).isRequired,
-		visible: PropTypes.bool,
-		index: PropTypes.number,
-		onClose: PropTypes.func,
-		thumbnailDOM: PropTypes.element
+		images: PropTypes.arrayOf(PropTypes.string).isRequired, // 图片列表
+		index: PropTypes.number,　// 当前图片位置
+		onClose: PropTypes.func,　// 关闭回调
+		thumbnailDOM: PropTypes.element　//　点击图片的节点(关联动画)
 	}
 
 	static defaultProps = {
-		visible: false,
 		index: 0,
 		onClose: () => {}
 	}
