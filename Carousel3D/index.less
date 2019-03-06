@@ -1,0 +1,49 @@
+.fc-carousel-3d {
+	touch-action: pan-x;
+	.container {
+		width: 100%;
+		padding-bottom: 40%;
+		position: relative;
+	}
+	.carousel_item {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transition: all 0.5s ease;
+	}
+	.slick-prev,
+	.slick-next {
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		text-align: center;
+		background: rgba(128, 109, 109, 0.4);
+		font-size: 22px;
+		line-height: 44px;
+		color: #fff;
+		position: absolute;
+		cursor: pointer;
+		top: calc(50% - 22px);
+		z-index: 3;
+		&:hover {
+			background: rgba(0, 0, 0, 0.6);
+		}
+	}
+	.slick-next {
+		right: 12px;
+	}
+	.slick-prev {
+		left: 12px;
+	}
+	// mobile 样式
+	@media screen and (max-width: 767px) {
+		.slick-prev,
+		.slick-next {
+			display: none;
+		}
+	}
+
+	// pc 样式
+	@media screen and (min-width: 768px) {
+	}
+}
