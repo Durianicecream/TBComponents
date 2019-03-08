@@ -2,8 +2,8 @@
  * @Author: TB
  * @Date: 2019-03-06 13:29:06
  * @Last Modified by: TB
- * @Last Modified time: 2019-03-06 18:16:40
- * @description	3D效果的轮播图组件
+ * @Last Modified time: 2019-03-08 13:24:43
+ * 3D效果的轮播图组件
  */
 import React from "react";
 import PropTypes from "prop-types";

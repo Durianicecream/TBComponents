@@ -1,3 +1,10 @@
+/*
+ * @Author: TB 
+ * @Date: 2019-03-08 13:24:08 
+ * @Last Modified by:   TB 
+ * @Last Modified time: 2019-03-08 13:24:08
+ * 滚动信息组件 
+ */
 import React from 'react'
 import { debounce } from 'lodash'
 
